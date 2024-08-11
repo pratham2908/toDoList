@@ -1,0 +1,168 @@
+.tasks {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: #fff;
+      outline: none;
+      min-width: 300px;
+      border: 1px solid grey;
+      color: black;
+    }
+
+    button {
+      text-wrap: nowrap;
+    }
+  }
+
+  .tasks_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .pending_tasks_container,
+  .done_tasks_container {
+    width: 100%;
+
+    .pending_tasks,
+    .done_tasks {
+      padding: 0 1rem;
+    }
+  }
+
+  .tasks_header {
+    width: 100%;
+    padding: 1rem;
+    background-color: rgba(248, 65, 65, 0.737);
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+    h2 {
+      margin: 0;
+    }
+
+    button {
+      padding: 5px 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #f1f1f1;
+      cursor: pointer;
+    }
+  }
+
+  table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    overflow: visible;
+
+    th,
+    td {
+      padding: 10px;
+      text-align: center;
+    }
+  }
+
+  .task {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease-in-out;
+
+    img {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+    }
+
+    &:hover {
+      transform: scale(1.01) translate(30px);
+      background-color: rgba(25, 0, 255, 0.393);
+    }
+  }
+
+  .user_data {
+    position: absolute;
+    top: 10px;
+    right: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    padding: 1rem;
+
+    p {
+      font-size: 1.2rem;
+    }
+
+    img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+  }
+}
+
+.login_page {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .data_container {
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    min-width: 400px;
+    position: relative;
+    backdrop-filter: blur(20px);
+    z-index: 10;
+
+    .user_data {
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding: 1rem 2rem;
+      border-radius: 5px;
+      cursor: pointer;
+
+      img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+
+      p {
+        font-size: 1.5rem;
+      }
+
+      &:hover {
+        background-color: #f1f1f180;
+        color: black;
+      }
+    }
+  }
+}

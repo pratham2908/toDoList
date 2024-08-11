@@ -3,7 +3,7 @@ import styles from "../styles/tasks.module.scss";
 import { Button } from "semantic-ui-react";
 import "semantic-ui-css/semantic.min.css";
 import { Toaster, toast } from "react-hot-toast";
-import LoginPage from "../lib/LoginPage"
+import LoginPage from "../lib/LoginPage";
 
 const Tasks = () => {
   const [user, setUser] = useState();
